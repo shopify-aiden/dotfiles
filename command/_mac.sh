@@ -3,7 +3,7 @@ alias spotify="open -a'Spotify'"
 
 
 chrome() {
-    open -a "Chrome" $@
+    open -a "Google Chrome" $@
 }
 
 
@@ -16,6 +16,10 @@ start() {
     chrome
     slack
     spotify
+
+    if ! [ -x "$(command -v script_start)" ]; then
+        script_start
+    fi
 }
 
 
