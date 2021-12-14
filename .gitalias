@@ -1,0 +1,12 @@
+
+[alias]
+    current = rev-parse --abbrev-ref HEAD
+    default = "!git checkout $(git main)"
+    dredge = "!git fetch -p && for b in $(git branch -vv | awk '/: gone]/{if ($1 != \"*\"){print $1}else{print $2}}');do if [ $(git current) == $b ];then git checkout $(git main);git pull;fi;git branch -D $b;done"
+    edit = "!code ~/.gitconfig"
+    force = "push --force"
+    last = log -1 HEAD
+    logs = log
+    main = "!git symbolic-ref refs/remotes/origin/HEAD | sed s@^refs/remotes/origin/@@"
+    new = "!git push -u origin $(git current)"
+    path = rev-parse --show-toplevel
