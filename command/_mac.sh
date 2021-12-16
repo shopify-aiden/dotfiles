@@ -2,6 +2,10 @@ alias slack="open -a 'Slack'"
 alias spotify="open -a'Spotify'"
 
 
+alias edit="code ~/dotfiles"
+alias shopify="code ~/src/github.com/Shopify/shopify"
+
+
 chrome() {
     open -a "Google Chrome" $@
 }
