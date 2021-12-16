@@ -1,3 +1,8 @@
 command/_local.sh
 data/*
 script/*
+streamdeck/*/build/
+streamdeck/*/dist/
+streamdeck/*/venv/
+streamdeck/*/*.spec
+**/__pycache__/
