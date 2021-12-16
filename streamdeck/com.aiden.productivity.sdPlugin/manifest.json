@@ -1,0 +1,40 @@
+{
+    "Actions": [
+        {
+            "Icon": "icons/play",
+            "Name": "Start",
+            "States": [
+              {
+                "Image": "icons/play",
+                "TitleAlignment": "middle",
+                "FontSize": "16"
+              }
+            ],
+            "SupportedInMultiActions": false,
+            "ToolTip": "Call `start` command",
+            "UUID": "com.aiden.productivity.start"
+        }
+    ],
+    "SDKVersion": 2,
+    "Author": "aiden",
+    "CodePath": "./dist/productivity",
+    "Description": "Keep track of latest videos",
+    "Name": "Aiden productivity",
+    "Icon": "icons/play",
+    "URL": "https://storey.dev",
+    "Version": "0.1",
+    "OS":[
+        {
+            "Platform": "mac",
+            "MinimumVersion" : "10.11"
+        },
+        {
+            "Platform": "windows",
+            "MinimumVersion" : "10"
+        }
+    ],
+    "Software":
+    {
+        "MinimumVersion" : "4.1"
+    }
+}
