@@ -11,8 +11,38 @@
               }
             ],
             "SupportedInMultiActions": false,
-            "ToolTip": "Call `start` command",
+            "ToolTip": "Open regular applications to start the day",
             "UUID": "com.aiden.productivity.start"
+        },
+        {
+            "Icon": "icons/play",
+            "Name": "Shopify",
+            "States": [
+              {
+                "Image": "icons/play",
+                "Title": "Shopify",
+                "TitleAlignment": "middle",
+                "FontSize": "16"
+              }
+            ],
+            "SupportedInMultiActions": false,
+            "ToolTip": "Open the Shopfy repo in VSCode",
+            "UUID": "com.aiden.productivity.shopify"
+        },
+        {
+            "Icon": "icons/play",
+            "Name": "Edit",
+            "States": [
+              {
+                "Image": "icons/play",
+                "Title": "Edit",
+                "TitleAlignment": "middle",
+                "FontSize": "16"
+              }
+            ],
+            "SupportedInMultiActions": false,
+            "ToolTip": "Open the dotfiles repo in VSCode",
+            "UUID": "com.aiden.productivity.edit"
         }
     ],
     "SDKVersion": 2,

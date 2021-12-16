@@ -35,10 +35,14 @@ async def handle_event(event: Event) -> None:
     if event.type == event.WILL_APPEAR:
         button: Button = event.instance
 
-        if event.action == 'start':
-            button.set_short_press_handler(
-                create_command_handler('start')
-            )
+        for command in ['edit', 'shopify', 'start']:
+            if event.action == command:
+                button.set_short_press_handler(
+                    create_command_handler(command)
+                )
+
+                break
+
 
 
 def log(*parts) -> None:
