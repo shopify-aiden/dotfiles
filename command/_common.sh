@@ -3,7 +3,6 @@ d64() {
     echo
 }
 
-
 e64() {
     echo -n $1 | base64
 }
